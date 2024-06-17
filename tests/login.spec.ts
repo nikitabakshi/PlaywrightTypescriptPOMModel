@@ -11,7 +11,7 @@ let homepage:Homepage;
 let loginpage:LoginPage;
 
   test.beforeAll(async ({browser }) => {
-    //context= await browser.newContext();
+    context= await browser.newContext();
     page = await browser.newPage();
     homepage=new Homepage(page);
     loginpage=new LoginPage(page);
