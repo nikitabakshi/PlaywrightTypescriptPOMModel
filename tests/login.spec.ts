@@ -18,9 +18,9 @@ let loginpage:LoginPage;
     
   });
 
-  // test.afterAll(async () => {
-  //   await page.close();
-  // });
+   test.afterAll(async () => {
+     await page.close();
+   });
 
 
 test('login test',async() =>{
